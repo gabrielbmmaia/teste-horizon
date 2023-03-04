@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">teste-horizon</string>
+    <string name="logo_splash_fragment">Saúde</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_description">Cadastrar Paciente</string>
+    <string name="tag_nome_paciente">Nome Completo</string>
+    <string name="prontuario">Prontuário</string>
+    <string name="tag_idade_paciente">Idade</string>
+    <string name="tag_temperatura_paciente">Temperatura</string>
+    <string name="tag_tosse">Período com tosse</string>
+    <string name="tag_cefaleia">Período com dor de cabeça</string>
+    <string name="tag_viagem">Viajou para fora do país?</string>
+    <string name="radio_negative_button">Não</string>
+    <string name="radio_positive_button">Sim</string>
+    <string name="china">China</string>
+    <string name="eua">Estados Unidos</string>
+    <string name="italia">Itália</string>
+    <string name="indonesia">Indonésia</string>
+    <string name="portugal">Portugal</string>
 </resources>

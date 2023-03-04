@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_black"
+    android:padding="16dp"
+    tools:context=".FormsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prontuario_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/prontuario"
+            android:textColor="@color/default_yellow"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        Nome do Paciente-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nome_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/tag_nome_paciente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prontuario_title"
+            app:startIconDrawable="@drawable/ic_person_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome_editlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Idade do Paciente-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idade_inputlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/tag_idade_paciente"
+            app:layout_constraintEnd_toStartOf="@id/temperatura_inputlayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome_inputlayout"
+            app:startIconDrawable="@drawable/ic_idade">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idade_editlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Temperatura do Paciente-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/temperatura_inputlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/tag_temperatura_paciente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/idade_inputlayout"
+            app:layout_constraintTop_toBottomOf="@+id/nome_inputlayout"
+            app:startIconDrawable="@drawable/ic_temperatura">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/temperatura_editlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Período de Tosse-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sintoma_tosse_inputlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/tag_tosse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idade_inputlayout"
+            app:startIconDrawable="@drawable/ic_sintoma_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sintoma_tosse_editlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Período com dor de cabeça-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sintoma_cefaleia_inputlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/tag_cefaleia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sintoma_tosse_inputlayout"
+            app:startIconDrawable="@drawable/ic_sintoma_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sintoma_cefaleia_editlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Tag Viagem-->
+        <TextView
+            android:id="@+id/tag_viagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tag_viagem"
+            android:textColor="@color/default_yellow"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sintoma_cefaleia_inputlayout" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio_negative_button"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tag_viagem">
+
+            <RadioButton
+                android:id="@+id/radio_negative_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/radio_negative_button"
+                android:textColor="@color/default_white" />
+
+            <RadioButton
+                android:id="@+id/radio_positive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/radio_positive_button"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroup"
+            tools:visibility="visible">
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/china" />
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/eua" />
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/indonesia" />
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/italia" />
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/portugal" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
