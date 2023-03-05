@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/default_black"
-    android:padding="16dp"
-    tools:context=".FormsFragment">
+    android:paddingHorizontal="16dp"
+    android:fillViewport="true"
+    tools:context=".presentation.forms.FormsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!--        Titulo-->
         <TextView
             android:id="@+id/prontuario_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/prontuario"
             android:textColor="@color/default_yellow"
@@ -163,6 +166,7 @@
         </RadioGroup>
 
         <LinearLayout
+            android:id="@+id/checkbox_paises"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -200,7 +204,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/portugal" />
+
+            <CheckBox
+                style="@style/checkbox_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/outro" />
         </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastrar"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/default_black"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_paises" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

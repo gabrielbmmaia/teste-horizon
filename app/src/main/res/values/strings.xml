@@ -18,4 +18,6 @@
     <string name="italia">Itália</string>
     <string name="indonesia">Indonésia</string>
     <string name="portugal">Portugal</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="outro">Outro</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.teste_horizon;
+package com.example.teste_horizon.presentation.splash;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.teste_horizon.R;
 
 public class SplashFragment extends Fragment {
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.teste_horizon.SplashFragment"
+        android:name="com.example.teste_horizon.presentation.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.teste_horizon.HomeFragment"
+        android:name="com.example.teste_horizon.presentation.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/formsFragment"
-        android:name="com.example.teste_horizon.FormsFragment"
+        android:name="com.example.teste_horizon.presentation.forms.FormsFragment"
         android:label="fragment_forms"
         tools:layout="@layout/fragment_forms" >
         <action
