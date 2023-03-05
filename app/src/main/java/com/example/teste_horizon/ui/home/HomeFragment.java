@@ -1,4 +1,4 @@
-package com.example.teste_horizon.presentation.home;
+package com.example.teste_horizon.ui.home;
 
 import android.os.Bundle;
 

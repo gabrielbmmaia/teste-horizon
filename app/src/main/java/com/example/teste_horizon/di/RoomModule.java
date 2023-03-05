@@ -4,8 +4,8 @@ import android.app.Application;
 
 import androidx.room.Room;
 
-import com.example.teste_horizon.data.PacienteDao;
-import com.example.teste_horizon.data.PacienteDatabase;
+import com.example.teste_horizon.data.local.PacienteDao;
+import com.example.teste_horizon.data.local.PacienteDatabase;
 
 import javax.inject.Singleton;
 

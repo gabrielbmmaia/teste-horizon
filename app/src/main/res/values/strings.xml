@@ -10,7 +10,7 @@
     <string name="tag_temperatura_paciente">Temperatura</string>
     <string name="tag_tosse">Período com tosse</string>
     <string name="tag_cefaleia">Período com dor de cabeça</string>
-    <string name="tag_viagem">Viajou para fora do país?</string>
+    <string name="tag_viagem">Viajou para fora do país nas últimas 6 semanas?</string>
     <string name="radio_negative_button">Não</string>
     <string name="radio_positive_button">Sim</string>
     <string name="china">China</string>

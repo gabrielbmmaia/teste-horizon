@@ -1,4 +1,4 @@
-package com.example.teste_horizon.presentation.splash;
+package com.example.teste_horizon.ui.splash;
 
 import android.os.Bundle;
 

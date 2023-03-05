@@ -7,7 +7,7 @@
     android:background="@color/default_black"
     android:paddingHorizontal="16dp"
     android:fillViewport="true"
-    tools:context=".presentation.forms.FormsFragment">
+    tools:context=".ui.forms.FormsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -133,6 +133,7 @@
             android:text="@string/tag_viagem"
             android:textColor="@color/default_yellow"
             android:textSize="20sp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sintoma_cefaleia_inputlayout" />
