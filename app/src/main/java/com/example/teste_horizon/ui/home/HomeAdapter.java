@@ -15,8 +15,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
 
     private List<Paciente> pacientes;
 
-    public HomeAdapter(List<Paciente> pacientes) {
-        this.pacientes = pacientes;
+    public void setPacientesList(List<Paciente> pacientesList) {
+        this.pacientes = pacientesList;
     }
 
     @NonNull

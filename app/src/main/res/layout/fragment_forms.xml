@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/default_black"
-    android:paddingHorizontal="16dp"
     android:fillViewport="true"
+    android:paddingHorizontal="16dp"
     tools:context=".ui.forms.FormsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -131,10 +131,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="@string/tag_viagem"
             android:textColor="@color/default_yellow"
             android:textSize="20sp"
-            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sintoma_cefaleia_inputlayout" />
@@ -178,39 +178,51 @@
             tools:visibility="visible">
 
             <CheckBox
+                android:id="@+id/china"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/china" />
 
             <CheckBox
+                android:id="@+id/eua"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/eua" />
 
             <CheckBox
+                android:id="@+id/indonesia"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/indonesia" />
 
             <CheckBox
+                android:id="@+id/italia"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/italia" />
 
             <CheckBox
+                android:id="@+id/portugal"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/portugal" />
 
             <CheckBox
+                android:id="@+id/outro"
                 style="@style/checkbox_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:checked="false"
                 android:text="@string/outro" />
         </LinearLayout>
 
@@ -218,16 +230,16 @@
             android:id="@+id/button_cadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/cadastrar"
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/default_yellow"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastrar"
             android:textColor="@color/default_black"
-            app:layout_constraintVertical_bias="0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox_paises" />
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_paises"
+            app:layout_constraintVertical_bias="0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

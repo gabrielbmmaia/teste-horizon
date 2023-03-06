@@ -5,7 +5,6 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.example.teste_horizon.core.Constantes;
 import com.example.teste_horizon.data.model.Paciente;
 
 import java.util.List;
@@ -14,12 +13,15 @@ import java.util.List;
 public interface PacienteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(Paciente... pacienteDtos);
+    void insertAll(Paciente... pacientes);
 
     @Query("SELECT * FROM Paciente")
     List<Paciente> getAllPacientes();
 
     @Query("SELECT * FROM Paciente WHERE resultado = :filtro")
-    List<Paciente> filtro(String filtro);
+    List<Paciente> filtrar(String filtro);
+
+    @Query("SELECT * FROM Paciente WHERE nome =:nome")
+    Paciente pesquisarPaciente(String nome);
 
 }

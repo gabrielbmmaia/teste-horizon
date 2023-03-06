@@ -11,8 +11,8 @@ public class Paciente {
 
     @PrimaryKey(autoGenerate = true)
     public int id;
-    public String nome;
-    public int idade;
+    public String nome = "";
+    public int idade = 0;
     public double temperatura;
     @ColumnInfo(name = "periodo_tosse")
     public int periodoTosse;
@@ -21,14 +21,13 @@ public class Paciente {
     public boolean viagem;
     public String resultado;
 
-    public Paciente(String nome, int idade, double temperatura, int periodoTosse, int periodoCefaleia, boolean viagem, String resultado) {
+    public Paciente(String nome, int idade, double temperatura, int periodoTosse, int periodoCefaleia, boolean viagem) {
         this.nome = nome;
         this.idade = idade;
         this.temperatura = temperatura;
         this.periodoTosse = periodoTosse;
         this.periodoCefaleia = periodoCefaleia;
         this.viagem = viagem;
-        this.resultado = resultado;
     }
 
     @Override
@@ -42,5 +41,18 @@ public class Paciente {
     @Override
     public int hashCode() {
         return Objects.hash(nome, idade);
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", temperatura=" + temperatura +
+                ", periodoTosse=" + periodoTosse +
+                ", periodoCefaleia=" + periodoCefaleia +
+                ", viagem=" + viagem +
+                ", resultado='" + resultado + '\'' +
+                '}';
     }
 }

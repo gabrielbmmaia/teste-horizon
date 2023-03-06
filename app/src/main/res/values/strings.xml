@@ -20,4 +20,9 @@
     <string name="portugal">Portugal</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="outro">Outro</string>
+    <string name="menu_todos">Todos</string>
+    <string name="menu_tratamento">Tratamento</string>
+    <string name="menu_quarentena">Quarentena</string>
+    <string name="menu_liberado">Liberado</string>
+    <string name="menu_ordenar">Ordenar</string>
 </resources>
