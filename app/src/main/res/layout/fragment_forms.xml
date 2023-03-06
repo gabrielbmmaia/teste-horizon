@@ -39,6 +39,7 @@
             app:layout_constraintTop_toBottomOf="@+id/prontuario_title"
             app:startIconDrawable="@drawable/ic_person_icon">
 
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nome_editlayout"
                 android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                 android:id="@+id/temperatura_editlayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--        Período de Tosse-->
@@ -214,11 +215,13 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button_cadastrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
             android:text="@string/cadastrar"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/default_yellow"
             android:textColor="@color/default_black"
             app:layout_constraintVertical_bias="0"
             app:layout_constraintBottom_toBottomOf="parent"

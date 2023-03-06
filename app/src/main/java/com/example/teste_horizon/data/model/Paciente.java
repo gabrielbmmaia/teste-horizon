@@ -13,7 +13,7 @@ public class Paciente {
     public int id;
     public String nome;
     public int idade;
-    public int temperatura;
+    public double temperatura;
     @ColumnInfo(name = "periodo_tosse")
     public int periodoTosse;
     @ColumnInfo(name = "periodo_cefaleia")
@@ -21,7 +21,7 @@ public class Paciente {
     public boolean viagem;
     public String resultado;
 
-    public Paciente(String nome, int idade, int temperatura, int periodoTosse, int periodoCefaleia, boolean viagem, String resultado) {
+    public Paciente(String nome, int idade, double temperatura, int periodoTosse, int periodoCefaleia, boolean viagem, String resultado) {
         this.nome = nome;
         this.idade = idade;
         this.temperatura = temperatura;
