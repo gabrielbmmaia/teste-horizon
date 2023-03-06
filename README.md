@@ -1,6 +1,8 @@
-# teste-horizon
+# Teste Horizon
 
-
+## 🔨 Funcionalidades do projeto
+`Cadastrar Prontuário de paciente` <br>
+`Organizar lista` <br>
 
 ## ✔️ Técnicas e tecnologias utilizadas
 `Java`: linguagem utilizada no projeto. <br>
@@ -13,3 +15,4 @@
 `Arquitetura MVVM` <br>
 
 ## 🛠️ Abrir e rodar o projeto
+A APK do Projeto está disponibilizado ao lado.
