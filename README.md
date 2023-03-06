@@ -18,3 +18,6 @@ Projeto realizado para atender as exigências do teste prático de ingressão à
 
 ## 🛠️ Abrir e rodar o projeto
 A APK do Projeto está disponibilizado ao lado.
+
+## 🎥 Showcase do aplicativo
+https://user-images.githubusercontent.com/109977155/223275441-0876261c-d11f-4db0-9c7c-6ea00bffe492.mp4
