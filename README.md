@@ -1,5 +1,7 @@
 # Teste Horizon
 
+Projeto realizado para atender as exigências do teste prático de ingressão à empresa Horizon.
+
 ## 🔨 Funcionalidades do projeto
 `Cadastrar Prontuário de paciente` <br>
 `Organizar lista` <br>
