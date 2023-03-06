@@ -1,5 +1,9 @@
 package com.example.teste_horizon.data;
 
+import static com.example.teste_horizon.core.Constantes.LIBERADO;
+import static com.example.teste_horizon.core.Constantes.QUARENTENA;
+import static com.example.teste_horizon.core.Constantes.TRATAMENTO;
+
 import com.example.teste_horizon.data.local.PacienteDao;
 import com.example.teste_horizon.data.model.Paciente;
 
@@ -7,9 +11,6 @@ import java.util.List;
 
 public class PacienteRepository {
 
-    private static final String QUARENTENA = "Em Quarentena";
-    private static final String TRATAMENTO = "Em Tratamento";
-    private static final String LIBERADO = "Liberado";
     private PacienteDao pacienteDao;
 
     public PacienteRepository(PacienteDao pacienteDao) {
